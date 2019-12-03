@@ -74,7 +74,7 @@ while True:
     image = soup.find("img", class_="img-responsive img-comic")
     image_url = "https:" + image['src']
 
-    # if previous image is different than the current image, save current image as a new entry in images folder
+    # if previous image is different than the current image, save current image as a new entry in images folder and upload to twitter
     if image_url != prev_image_url:
         # saves date of image to image_date
         image_info = soup.find("date", class_="comic-title-date")
